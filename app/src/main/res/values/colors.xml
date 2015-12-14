@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#31b98e</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="linearColor">#767676</color>
+    <color name="spinnerColor">#868686</color>
+    <color name="black">#000000</color>
+    <color name="whitegreen">#e9fcdb</color>
+    <color name="blue">#cc0a0adc</color>
+    <color name="whitegray">#cc797979</color>
+    <color name="red">#ccff0000</color>
+    <color name="whiteYellow">#ccebef6a</color>
+    <color name="blackblue">#cc054384</color>
+    <color name="darkgray">#262626</color>
+    <color name="whiteblue">#6ea6ff</color>
+    <color name="whiteblue2">#d2dcec</color>
+    <color name="whiteblue3">#91b7f4</color>
+</resources>

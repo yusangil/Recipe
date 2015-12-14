@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">TestRecipe</string>
+    <string name="action_setting">Settings</string>
+    <string name="action_search">Hello uarts</string>
+    <string name="when_eat">when</string>
+    <string name="order">when</string>
+
+    <string-array name="when_arrays">
+        <item>HOT</item>
+        <item>아침</item>
+        <item>점심</item>
+        <item>저녁</item>
+        <item>야식</item>
+        <item>간식</item>
+        <item>안주</item>
+    </string-array>
+    <string-array name="order_arrays">
+        <item>유통기한 순</item>
+        <item>재료일치 순</item>
+        <item>조리시간 순</item>
+        <item>적은재료 순</item>
+        <item>별점 순</item>
+    </string-array>
+</resources>

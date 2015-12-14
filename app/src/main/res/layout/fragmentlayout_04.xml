@@ -1,0 +1,252 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.sangil.MainActivity"
+    tools:ignore="MergeRootFrame">
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:background="@color/whitegreen"
+        android:layout_height="0dp"
+
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_height="60dp"
+            android:weightSum="10"
+            android:layout_gravity="center_horizontal|top">
+            <ImageButton
+                android:id="@+id/back_button"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:background="#00ffffff"
+                android:scaleType="fitCenter"
+                android:src="@drawable/pluss"
+                android:visibility="invisible"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:text="옵션"
+                android:textColor="#000000"
+                android:textAlignment="center"
+                android:textSize="40dp"
+                android:id="@+id/textView"
+                android:layout_weight="8"
+                android:layout_gravity="center" />
+            <ImageButton
+                android:id="@+id/plus_button"
+                android:layout_marginEnd="6dp"
+                android:layout_marginTop="6dp"
+                android:background="#00ffffff"
+                android:scaleType="fitCenter"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/upload"
+                android:visibility="invisible"
+                android:layout_weight="1"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginTop="60dp"
+            android:background="#ffffff"
+            android:layout_height="221dp"
+            android:layout_gravity="center_horizontal|top">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:background="@color/whitegreen"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/imageView"
+                android:layout_gravity="center_vertical" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="ID"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:id="@+id/textView2"
+                    android:layout_weight="0.5" />
+
+                <EditText
+                    android:layout_width="130dp"
+                    android:backgroundTintMode="screen"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:inputType="textPersonName"
+                    android:backgroundTint="@color/black"
+                    android:text=""
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:ems="10"
+                    android:id="@+id/id_Text"
+                    android:layout_weight="0.5" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="password"
+                    android:textSize="20dp"
+                    android:id="@+id/textView3"
+                    android:layout_weight="0.5" />
+                <EditText
+                    android:layout_width="130dp"
+                    android:backgroundTintMode="screen"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:inputType="textPassword"
+                    android:text=""
+                    android:textSize="15dp"
+                    android:ems="10"
+                    android:id="@+id/pwd_Text"
+                    android:layout_weight="0.5" />
+                <Button
+                    android:id="@+id/login"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/linearColor"
+                    android:text="  Log In  "
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:scaleType="fitCenter"
+
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/last_alarm"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:background="#ffffff"
+            android:layout_gravity="center_horizontal|bottom">
+            <ImageButton
+                android:layout_width="68dp"
+                android:layout_height="68dp"
+                android:src="@drawable/alarm"
+                android:background="#00ffffff"
+                android:id="@+id/image_alarm" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="유통기한 알림"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:layout_marginTop="22dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/text_alarm" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/make_list"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:layout_marginBottom="71dp"
+            android:background="#ffffff"
+            android:layout_gravity="center_horizontal|bottom">
+            <ImageButton
+                android:layout_width="68dp"
+                android:layout_height="68dp"
+                android:src="@drawable/cooklist"
+                android:background="#00ffffff"
+                android:id="@+id/image_list" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="내가 만든 요리 리스트 "
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:layout_marginTop="22dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/text_list" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/share_family"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:layout_marginBottom="142dp"
+            android:background="#ffffff"
+            android:layout_gravity="center_horizontal|bottom">
+            <ImageButton
+                android:layout_width="68dp"
+                android:layout_height="68dp"
+                android:src="@drawable/family"
+                android:background="#00ffffff"
+                android:id="@+id/image_family" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="가족과 공유하기"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:layout_marginTop="22dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/text_family" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/login_sns"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:layout_marginBottom="213dp"
+            android:background="#ffffff"
+            android:layout_gravity="center_horizontal|bottom">
+
+            <ImageButton
+                android:layout_width="68dp"
+                android:layout_height="68dp"
+                android:src="@drawable/facebokk"
+                android:background="#00ffffff"
+                android:id="@+id/image_facebook" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SNS 연동하기"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:layout_marginTop="22dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/text_facebook" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

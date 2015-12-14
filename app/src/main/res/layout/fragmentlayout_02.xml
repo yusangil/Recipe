@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.sangil.MainActivity"
+    tools:ignore="MergeRootFrame">
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_height="60dp"
+            android:weightSum="10"
+            android:layout_gravity="center_horizontal|top">
+            <ImageButton
+                android:id="@+id/list_button"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:background="#00ffffff"
+                android:scaleType="fitCenter"
+                android:src="@drawable/threeline"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="냉장고"
+                android:textColor="#000000"
+                android:textAlignment="center"
+                android:textSize="40dp"
+                android:id="@+id/textView"
+                android:layout_weight="8"
+                android:layout_gravity="center" />
+            <ImageButton
+                android:id="@+id/plus_button"
+                android:layout_marginEnd="6dp"
+                android:layout_marginTop="6dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="#00ffffff"
+                android:scaleType="fitCenter"
+                android:src="@drawable/pluss"
+                android:layout_weight="1"/>
+
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/List_ice"
+            android:orientation="vertical"
+            android:textColor="#000000"
+            android:background="@color/whitegreen"
+            android:textAlignment="center"
+            android:clickable="false"
+            android:choiceMode="none"
+            android:layout_width="175dp"
+            android:layout_height="300dp"
+            android:layout_marginBottom="60dp"
+            android:layout_gravity="left|center_vertical"></ListView>
+
+        <ListView
+            android:id="@+id/List_cold"
+            android:orientation="vertical"
+            android:background="@color/whitegreen"
+            android:textColor="#000000"
+            android:choiceMode="none"
+            android:textAlignment="center"
+            android:clickable="false"
+            android:layout_width="175dp"
+            android:layout_height="300dp"
+            android:layout_marginBottom="60dp"
+            android:layout_gravity="right|center_vertical"></ListView>
+
+        <ListView
+            android:id="@+id/List_warm"
+            android:textColor="#000000"
+            android:orientation="horizontal"
+            android:textAlignment="center"
+            android:clickable="false"
+            android:choiceMode="none"
+            android:background="@color/whitegreen"
+            android:layout_width="355dp"
+            android:layout_height="170dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal|bottom"></ListView>
+
+    </FrameLayout>
+</LinearLayout>

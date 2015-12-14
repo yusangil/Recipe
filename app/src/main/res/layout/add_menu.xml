@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:orientation="vertical"
+    android:layout_width="290dp"
+    android:layout_height="300dp"
+    android:background="@color/darkgray"
+    android:padding="10dp"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="재료추가"
+        android:textSize="30dp"
+        android:textColor="@color/blue"
+        android:id="@+id/textTitle"
+        android:layout_weight="0.04" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/blue"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0.1"
+        ></LinearLayout>
+
+    <RadioGroup
+        android:id = "@+id/radioGroup"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="냉장"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:id="@+id/button_cold"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.04" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="냉동"
+            android:textSize="20dp"
+            android:id="@+id/button_ice"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.04" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="실온"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:id="@+id/button_warm"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.04" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.11">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이름 : "
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:id="@+id/textView4" />
+            <EditText
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:id="@+id/text_id" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="개수 : "
+            android:textSize="20dp"
+                android:textColor="#ffffff"
+            android:id="@+id/button_num"
+            android:layout_gravity="center_horizontal"/>
+            <EditText
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:id="@+id/text_num" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="질량 : "
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:id="@+id/button_g"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"/>
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:id="@+id/text_g" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="유통기한 : "
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/textView5"
+            android:layout_marginTop="5dp"/>
+        <LinearLayout
+            android:id = "@+id/shelf_life"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp">
+
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:id="@+id/text_year" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="년"
+                android:layout_marginLeft="5dp"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:id="@+id/textView6"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:layout_width="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:id="@+id/text_month" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="월"
+                android:layout_marginLeft="5dp"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:id="@+id/textView7"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:layout_width="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:id="@+id/text_day" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="일"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:id="@+id/textView8"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="1dp"
+            android:layout_gravity="right"
+            android:background="@color/whitegray">
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:text="확인"
+            android:textColor="#ffffff"
+            android:layout_weight="0.4"
+            android:textSize="35dp"
+            android:background="#00ffffff"
+            android:id="@+id/call_button" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="1dp"
+            android:layout_marginTop="3dp"
+            android:layout_height="40dp"
+            android:background="@color/whitegray"
+            android:layout_gravity="center"
+            android:layout_weight="0.01">
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:text="취소"
+            android:textColor="#ffffff"
+            android:textSize="35dp"
+            android:id="@+id/cancel_button"
+            android:layout_weight="0.3"
+            android:background="#00ffffff"
+            android:layout_gravity="right"
+             />
+    </LinearLayout>
+
+
+</LinearLayout>
